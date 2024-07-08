@@ -1,0 +1,26 @@
+@keyframes slide {}
+
+.defaultHeight2Col {
+	height: 50%;
+}
+
+.defaultHeight1Col {
+	height: 100%;
+}
+
+.defaultHeight3Col {
+	height: 25%;
+	background: linear-gradient(90deg, rgba(195, 195, 195, 1) 0%, rgba(85, 84, 81, 1) 51%);
+}
+
+.radiusss {
+	border-radius: .5rem;
+}
+
+.defaultBakground {
+	background: linear-gradient(90deg, rgba(195, 195, 195, 1) 0%, rgba(85, 84, 81, 1) 51%);
+	border-radius: .5rem;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+}

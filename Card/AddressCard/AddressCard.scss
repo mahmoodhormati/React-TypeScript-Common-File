@@ -1,0 +1,73 @@
+.card {
+    --card-spacer-y: 1rem;
+    --card-spacer-x: 1.25rem;
+    --card-title-spacer-y: 1.25rem;
+    --card-border-width: var(--border-width);
+    --card-border-color: var(--border-color-translucent);
+    --card-border-radius: var(--border-radius);
+    --card-box-shadow: var(--custom-shadow);
+    --card-inner-border-radius: calc(var(--border-radius) - (var(--border-width)));
+    --card-cap-padding-y: 1rem;
+    --card-cap-padding-x: 1.25rem;
+    --card-cap-bg: var(--bg-surface-tertiary);
+    --card-cap-color: inherit;
+    --card-color: inherit;
+    --card-bg: var(--bg-surface);
+    --card-img-overlay-padding: 1rem;
+    --card-group-margin: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    color: var(--body-color);
+    word-wrap: break-word;
+    background-color: var(--card-bg);
+    background-clip: border-box;
+    border: var(--card-border-width) solid var(--card-border-color);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-box-shadow);
+    min-height: 11vh;
+  }
+
+  .card-stamp {
+    --stamp-size: 7rem; 
+    position: absolute;
+    top: 0;
+    width: calc(var(--stamp-size) * 1);
+    height: calc(var(--stamp-size) * 1);
+    max-height: 100%;
+    border-top-right-radius: 4px;
+    opacity: .2;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .card-stamp-icon {
+    background: var(--secondary);
+    color: var(--card-bg,var(--bg-surface));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100rem;
+    width: calc(var(--stamp-size) * 1);
+    height: calc(var(--stamp-size) * 1);
+    position: relative;
+    top: calc(var(--stamp-size) * -.25);
+    font-size: calc(var(--stamp-size) * .75);
+    
+  }
+
+  .card-body {
+    position: relative;
+    
+    padding: var(--card-spacer-y) var(--card-spacer-x);
+    color: var(--card-color);
+  }
+  .card-title {
+    display: block;
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    font-weight: var(--font-weight-medium);
+    color: inherit;
+    line-height: 1.5rem;
+  }

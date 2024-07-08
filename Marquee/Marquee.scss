@@ -1,0 +1,23 @@
+.marquee {
+   /* Width of marquee "window" must match the width of p elements*/
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+ 
+}
+
+.marquee > div {
+  display: table-row;
+  white-space: nowrap;
+  padding-left: 100%; 
+  animation: marquee 12s linear infinite; /* Time must be adjusted based on total width of scrolled elements*/
+}
+
+.marquee > div p {
+  width: 450px; /* Width of p elements must match the width of marquee "window"*/
+  padding-left: 450px; /* Padding determines space between scrolled elements */
+  display: table-cell; 
+}
+
+/* Make it move */

@@ -1,0 +1,41 @@
+.loginComponent{
+    height: 86vh;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+.loginWraper{
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: row-reverse;
+}
+.loginForm{
+    
+    min-height: 100%;
+    display: block;
+   
+    padding: 250px 55px 55px;
+
+}
+
+
+
+.loginPicture{
+    height: 100%;
+    background-image:url('/Images/bg-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+
+
+}

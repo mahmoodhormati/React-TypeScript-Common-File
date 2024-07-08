@@ -1,0 +1,65 @@
+.quantity-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 47px;
+    margin: 0 auto;
+    direction: rtl;
+  }
+  
+  .quantity-field .value-button {
+
+    margin: 0px;
+    width: 40px;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .quantity-field .value-button:hover {
+    box-shadow: none;
+  }
+  
+  .quantity-field .value-button:active {
+    box-shadow: none;
+  }
+  
+  .quantity-field .decrease-button {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .quantity-field .increase-button {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .quantity-field .number {
+    display: inline-block;
+    text-align: center;
+    margin: 0px;
+    width: 100px;
+    height: 100%;
+    line-height: 40px;
+    font-size: 11pt;
+    box-sizing: border-box;
+    border: none;
+    font-family: calibri;
+    @media (max-width: 575.98px) {
+      
+    }
+  }
+  
+  .quantity-field .number:focus-visible {
+    outline: none;
+  }
+
+ 
+
+  .delete i{
+    color: red;
+  }

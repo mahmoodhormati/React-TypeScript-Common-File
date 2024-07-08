@@ -1,0 +1,14 @@
+
+
+.buttonComponent i{
+  --icon-size: 20px;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  font-size: var(--icon-size) !important;
+  vertical-align: bottom;
+
+
+}
+.linebreak {
+  white-space: pre-line;
+}

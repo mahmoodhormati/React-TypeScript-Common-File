@@ -1,0 +1,99 @@
+$code-line-height: 1.25rem !default;
+$small-font-size: 85.714285% !default;
+$code-font-size: $small-font-size !default;
+$badge-font-size: $code-font-size !default;
+$badge-line-height: $code-line-height !default;
+$badge-font-weight: var(--font-weight-medium) !default;
+$badge-padding-y: 0.25em !default;
+$badge-padding-x: 0.5em !default;
+$badge-empty-size: 0.5rem !default;
+$badge-color: var(--secondary) !default;
+$badge-bg-color: var(--bg-surface-secondary) !default;
+$border-radius-pill: 100rem !default;
+$headings-font-weight: var(--font-weight-bold) !default;
+$headings-margin-bottom: var(--spacer) !default;
+$card-bg: var(--bg-surface) !default;
+
+
+.badge {
+  justify-content: center;
+  align-items: center;
+  background: $badge-bg-color;
+  overflow: hidden;
+  color: black;
+  user-select: none;
+  border: var(--border-width) var(--border-style) transparent;
+  min-width: 5vw ;
+  font-weight: $headings-font-weight;
+  letter-spacing: 0.04em;
+  vertical-align: bottom;
+
+  @at-root a#{&} {
+    color: $card-bg;
+  }
+
+  .avatar {
+    box-sizing: content-box;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0 0.5rem 0 -0.5rem;
+  }
+
+  .icon {
+    width: 1em;
+    height: 1em;
+    font-size: 1rem;
+    stroke-width: 2;
+  }
+}
+
+.badge:empty,
+.badge-empty {
+  display: inline-block;
+  width: $badge-empty-size;
+  height: $badge-empty-size;
+  min-width: 0;
+  min-height: auto;
+  padding: 0;
+  border-radius: $border-radius-pill;
+  vertical-align: baseline;
+}
+
+//
+// Outline badge
+//
+.badge-outline {
+  background-color: transparent;
+  border: var(--border-width) var(--border-style) currentColor;
+}
+
+//
+// Pill badge
+//
+.badge-pill {
+  border-radius: $border-radius-pill;
+}
+
+//
+// Badges list
+//
+
+//
+// Notification badge
+//
+.badge-notification {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  transform: translate(50%, -50%);
+  z-index: 1;
+}
+
+.badge-blink {
+  animation: blink 2s infinite;
+}
+
+
+
+
+

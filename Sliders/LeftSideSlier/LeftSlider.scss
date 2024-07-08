@@ -1,0 +1,147 @@
+$color_1: #000000;
+$color_2: white;
+
+@keyframes slide {
+}
+.sliderLeft {
+	position: relative;
+	
+	display: flex;
+	height: 100%;
+	justify-content: end;
+	
+}
+
+.sliderLeftContainer {
+	background: linear-gradient(90deg, rgba(195,195,195,1) 0%, rgba(85,84,81,1) 51%);
+	background-size: cover;
+	height: 100%;
+	border-top-right-radius: .5rem;
+	border-bottom-right-radius: .5rem;
+	opacity: .87;
+}
+.sliderLeftContainerWithoutImage {
+	&::after {
+		background: linear-gradient(to left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%);
+		content: '';
+		top: 0;
+		height: 100%;
+		width: 30%;
+		position: absolute;
+		z-index: 1;
+	}
+}
+.right-arrow {
+	position: absolute;
+	top: 50%;
+	right: 52%;
+	font-size: 3rem;
+	color: $color_2;
+	z-index: 10;
+	cursor: pointer;
+	user-select: none;
+}
+.left-arrow {
+	position: absolute;
+	top: 50%;
+	left: 2%;
+	font-size: 3rem;
+	color: $color_2;
+	z-index: 10;
+	cursor: pointer;
+	user-select: none;
+}
+.slide {
+	opacity: 0;
+	transition-duration: 2s cubic-bezier(0,0,1,1);
+}
+.slide.active {
+	opacity: 1;
+	transition-duration: 1s cubic-bezier(0,0,1,1);
+	transform: scale(1);
+	width: 100%;
+}
+.slider_control-LeftBanner {
+	z-index: 100;
+	position: absolute;
+	left: 5%;
+	top: 50%;
+	width: 50px;
+	height: 50px;
+	margin-top: -25px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.4);
+	transform: translateX(-50px);
+	opacity: 1;
+	transition: all 0.5s 1s;
+	cursor: pointer;
+	&:before {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 20px;
+		height: 20px;
+		margin-left: -10px;
+		margin-top: -10px;
+		border: 2px solid #000;
+		border-bottom: none;
+		border-right: none;
+		transform: translateX(5px) rotate(-45deg);
+	}
+}
+.slider_control--right-LeftBanner {
+	z-index: 100;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 50px;
+	height: 50px;
+	margin-top: -25px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.4);
+	transform: translateX(-50px);
+	opacity: 1;
+	transition: all 0.5s 1s;
+	cursor: pointer;
+	&:before {
+		content: "";
+		position: absolute;
+		right: 50%;
+		top: 50%;
+		width: 20px;
+		height: 20px;
+		margin-left: -10px;
+		margin-top: -10px;
+		border: 2px solid #000;
+		border-bottom: none;
+		border-right: none;
+		transform: translateX(5px) rotate(135deg);
+	}
+}
+@media (max-width: 991px) {
+	.slider_control--right-LeftBanner {
+		display: none;
+	}
+	.slider_control-LeftBanner {
+		display: none;
+	}
+}
+.desc{
+	margin: auto;
+	max-width: 80%;
+}
+
+.afterSliderLeft{
+	opacity: 0;
+	transition-duration: 2s cubic-bezier(0,0,1,1);
+	height: 100%;
+}
+.afterSliderLeft.active {
+	opacity: 1;
+	transition-duration: 1s cubic-bezier(0,0,1,1);
+	transform: scale(1);
+
+	height: 100%;
+
+}
