@@ -1,0 +1,21 @@
+.switchToggle {
+   
+    width: 35px;
+    height: 35px;
+    display: flex;
+    padding: 5px;
+    background-color: transparent;
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    transition: background-color 0.2s ease-in;
+  
+}
+
+.themeSwitcher{
+    margin-top: 0.5vh;
+
+}
+
+

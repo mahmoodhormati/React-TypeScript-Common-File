@@ -1,0 +1,64 @@
+.localToggle{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    padding: 5px;
+    background-color: transparent;
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    transition: background-color 0.2s ease-in;
+}
+
+.localSwitcher{
+    margin-top: 0.5vh;
+    
+}
+
+
+.localSwitcher  * svg{
+    display: none;
+ }
+
+ .localSwitcher .css-1u9des2-indicatorSeparator{
+    display: none;
+ }
+ .localSwitcher .SelectComponent{
+width: 4rem;
+ }
+
+ .localSwitcher .SelectImage span{
+    color: transparent;
+ }
+ .localSwitcher .css-1nmdiq5-menu{
+    position: flex;
+    z-index: 11;
+ }
+ .localSwitcher .css-4xgw5l-IndicatorsContainer2{
+    width: 0;
+ }
+ .localSwitcher .css-13cymwt-control{
+    border:none;
+ }
+
+ .localSwitcher  .css-1nmdiq5-menu {
+    position: absolute;
+    display: block;
+    z-index: 100000;
+
+   
+ }
+
+.loctoggle-inner{
+    background-color: transparent;
+    background-image: url(/Images/lang2.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    fill:white;
+    -webkit-animation-name: elastic-spin;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+}
